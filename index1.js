@@ -22,7 +22,7 @@ async function forecastWeather(city) {
     "Pressure: " + data.currentConditions.pressure + " mb";
   document.querySelector(".humidity").innerHTML =
     "Humidity: " + data.currentConditions.humidity + " %";
-  var current_image =data.currentConditions.icon + ".png";
+  var current_image ="weather-forecasting/"data.currentConditions.icon + ".png";
   document
     .querySelector(".current-weather-image")
     .setAttribute("src", current_image);
