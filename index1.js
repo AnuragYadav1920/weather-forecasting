@@ -22,7 +22,7 @@ async function forecastWeather(city) {
     "Pressure: " + data.currentConditions.pressure + " mb";
   document.querySelector(".humidity").innerHTML =
     "Humidity: " + data.currentConditions.humidity + " %";
-  var current_image = "images/" + data.currentConditions.icon + ".png";
+  var current_image =data.currentConditions.icon + ".png";
   document
     .querySelector(".current-weather-image")
     .setAttribute("src", current_image);
@@ -31,7 +31,7 @@ async function forecastWeather(city) {
   const day1_date = new Date(data.days[1].datetime);
   const d1 = day1_date.getDay();
   document.querySelector(".day1").innerHTML = Day[d1];
-  var day1_im = "images/" + data.days[1].icon + ".png";
+  var day1_im =data.days[1].icon + ".png";
   document.querySelector(".day1-image").setAttribute("src", day1_im);
   document.querySelector(".day1-temp").innerHTML =
     Math.round(data.days[1].temp) + "°c";
@@ -40,7 +40,7 @@ async function forecastWeather(city) {
   const day2_date = new Date(data.days[2].datetime);
   const d2 = day2_date.getDay();
   document.querySelector(".day2").innerHTML = Day[d2];
-  var day2_im = "images/" + data.days[2].icon + ".png";
+  var day2_im =data.days[2].icon + ".png";
   document.querySelector(".day2-image").setAttribute("src", day2_im);
   document.querySelector(".day2-temp").innerHTML =
     Math.round(data.days[2].temp) + "°c";
@@ -49,7 +49,7 @@ async function forecastWeather(city) {
   const day3_date = new Date(data.days[3].datetime);
   const d3 = day3_date.getDay();
   document.querySelector(".day3").innerHTML = Day[d3];
-  var day3_im = "images/" + data.days[3].icon + ".png";
+  var day3_im =data.days[3].icon + ".png";
   document.querySelector(".day3-image").setAttribute("src", day3_im);
   document.querySelector(".day3-temp").innerHTML =
     Math.round(data.days[3].temp) + "°c";
@@ -58,7 +58,7 @@ async function forecastWeather(city) {
   const day4_date = new Date(data.days[4].datetime);
   const d4 = day4_date.getDay();
   document.querySelector(".day4").innerHTML = Day[d4];
-  var day4_im = "images/" + data.days[4].icon + ".png";
+  var day4_im = "data.days[4].icon + ".png";
   document.querySelector(".day4-image").setAttribute("src", day4_im);
   document.querySelector(".day4-temp").innerHTML =
     Math.round(data.days[4].temp) + "°c";
@@ -67,7 +67,7 @@ async function forecastWeather(city) {
   const day5_date = new Date(data.days[5].datetime);
   const d5 = day5_date.getDay();
   document.querySelector(".day5").innerHTML = Day[d5];
-  var day5_im = "images/" + data.days[5].icon + ".png";
+  var day5_im =data.days[5].icon + ".png";
   document.querySelector(".day5-image").setAttribute("src", day5_im);
   document.querySelector(".day5-temp").innerHTML =
     Math.round(data.days[5].temp) + "°c";
