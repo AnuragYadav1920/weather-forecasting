@@ -1,0 +1,173 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
+.container{
+  width:70%;
+  min-height:auto;
+  margin:0 auto 0 auto;
+  background:#2f2f2f;
+}
+.container1{
+  width: 70%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+.c1{
+  margin: 60px auto;
+  flex-basis: 70%;
+  justify-content: center;
+  align-items: center;
+}
+input{
+  height: 30px;
+  width: 80%;
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-radius: 20px;
+  border:none;
+  outline: none;
+}
+.c2{
+  margin: 60px auto;
+  flex-basis: 30%;
+ } 
+ .c2>img{
+  height: 30px;
+  width: 30px;
+ }
+.weather{
+  display: none;
+  height: auto;
+}
+
+ /* container 2 */
+ .container2 {
+  text-align: center;
+  color:#fff;
+ 
+ }
+ .container2 h2{
+  font-size: 2.5rem;
+  text-transform: uppercase;
+ }
+ /* container 3 */
+
+ .container3{
+  display:flex;
+  margin:60px 40px;
+  justify-content: space-between;
+  
+ }
+ .container3-1{
+  display: grid;
+  
+ }
+ .current-weather-image{
+  width:100px;
+  height: 100px;
+ }
+ .current-weather{
+  margin: 10px auto;
+  color: #fff;
+  font-size: 2rem;
+ 
+ }
+ .container3-2{
+  color:#fff;
+  font-size: 1.3rem;
+  margin:auto 10px;
+ }
+ .container3-3{
+  display:grid;
+  color:#fff;
+  justify-content: left;
+  word-wrap: wrap;
+ }
+ p{
+  text-align: center;
+ }
+ .wind {
+  font-size: 1rem;
+ }
+ .pressure {
+  font-size: 1rem;
+ }
+ .humidity {
+  font-size: 1rem;
+ }
+
+ /* container 4 */
+ .container4{
+  max-height:auto;
+  height: 34.5vh;
+  display: flex;
+  margin:0 30px;
+  justify-content: space-between;
+  color:#fff;
+  font-size: 2rem;
+ }
+ .card{
+  display: grid;
+ }
+.day{
+  width: 60px;
+  height:60px
+}
+@media screen and (max-width: 700px){
+  .container2 h2{
+    font-size: 2rem;
+  }
+ .container3{
+  display: grid;
+  justify-content: center;
+  align-items: center;
+ }
+ .container3-1{
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+ }
+ .current-weather-image{
+  height: 80px;
+  width: 80px;
+  margin: 0 auto;
+ }
+ .container3-2{
+  font-size: 1rem;
+  margin:10px auto;
+  text-align: center;
+
+ }
+ .container3-3{
+  align-items: center;
+  justify-content: center;
+  margin:10px auto;
+ }
+ p{
+  text-align: center;
+  margin: 5px auto;
+ }
+ .container4{
+  height: auto;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+ }
+ .card{
+  margin:20px auto;
+ }
+ .day{
+  margin: 10px auto;
+  height: 80px;
+  width: 80px;
+ }
+}
+
